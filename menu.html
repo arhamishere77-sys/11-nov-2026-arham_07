@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Purple Basil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="logo" href="index.html">✿ purple<span>basil</span></a>
+        <button class="menu-toggle">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="nav-cta" href="contact.html#reservation">Book a Table</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-hero container">
+    <p class="eyebrow">FRESH FROM OUR KITCHEN</p>
+    <h1>Our delicious <em>menu.</em></h1>
+    <p>Simple ingredients, beautiful flavours and something for every appetite.</p>
+</section>
+
+<section class="section container menu-section">
+
+    <div class="menu-toolbar">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="mains">Mains</button>
+            <button class="filter-btn" data-filter="sides">Sides</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+
+        <label class="search-box">
+            <span>⌕</span>
+            <input id="menu-search" type="search" placeholder="Find a dish...">
+        </label>
+    </div>
+
+    <div class="menu-grid">
+
+        <article class="menu-card" data-category="mains" data-name="creamy garden pasta">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=85" alt="Pasta">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Creamy Garden Pasta</h3>
+                    <strong>Rs. 1,250</strong>
+                </div>
+                <p>Silky cream sauce, fresh herbs and parmesan.</p>
+                <button class="add-button" data-item="Creamy Garden Pasta" data-price="1250">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="mains" data-name="classic basil burger">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85" alt="Burger">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Classic Basil Burger</h3>
+                    <strong>Rs. 1,450</strong>
+                </div>
+                <p>Grilled patty, lettuce, tomato and house sauce.</p>
+                <button class="add-button" data-item="Classic Basil Burger" data-price="1450">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="mains" data-name="margherita pizza">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85" alt="Pizza">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Margherita Pizza</h3>
+                    <strong>Rs. 1,600</strong>
+                </div>
+                <p>Tomato, mozzarella and fresh basil.</p>
+                <button class="add-button" data-item="Margherita Pizza" data-price="1600">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="mains" data-name="grilled chicken bowl">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85" alt="Chicken bowl">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Grilled Chicken Bowl</h3>
+                    <strong>Rs. 1,350</strong>
+                </div>
+                <p>Herb chicken, rice and vegetables.</p>
+                <button class="add-button" data-item="Grilled Chicken Bowl" data-price="1350">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="sides" data-name="garden fresh bowl">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85" alt="Salad">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Garden Fresh Bowl</h3>
+                    <strong>Rs. 950</strong>
+                </div>
+                <p>Crisp greens, avocado and citrus dressing.</p>
+                <button class="add-button" data-item="Garden Fresh Bowl" data-price="950">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="sides" data-name="loaded fries">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=85" alt="Fries">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Loaded Fries</h3>
+                    <strong>Rs. 650</strong>
+                </div>
+                <p>Golden fries with cheese and special dip.</p>
+                <button class="add-button" data-item="Loaded Fries" data-price="650">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="desserts" data-name="chocolate brownie">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85" alt="Brownie">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Chocolate Brownie</h3>
+                    <strong>Rs. 550</strong>
+                </div>
+                <p>Rich chocolate brownie, baked in-house.</p>
+                <button class="add-button" data-item="Chocolate Brownie" data-price="550">Add to order +</button>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks" data-name="berry lemonade">
+            <img src="https://images.unsplash.com/photo-1513558161293-c37da9d02fd1?auto=format&fit=crop&w=700&q=85" alt="Lemonade">
+            <div class="menu-card-body">
+                <div class="menu-title">
+                    <h3>Berry Lemonade</h3>
+                    <strong>Rs. 450</strong>
+                </div>
+                <p>Fresh lemon, berries and a little sparkle.</p>
+                <button class="add-button" data-item="Berry Lemonade" data-price="450">Add to order +</button>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="empty-message" hidden>No dishes found. Try another search.</p>
+
+    <aside class="order-panel">
+        <div>
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h2>Your order <span class="order-count">(0 items)</span></h2>
+            <ul id="order-list">
+                <li class="empty-order">Your order is empty — add a favourite!</li>
+            </ul>
+        </div>
+
+        <div class="order-total">
+            <strong>Total</strong>
+            <strong id="order-total">Rs. 0</strong>
+        </div>
+
+        <button class="button button-primary" id="checkout-button">
+            Continue to contact →
+        </button>
+
+        <p class="small-note">Demo order. Final availability is confirmed by the restaurant.</p>
+    </aside>
+
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="logo footer-logo" href="index.html">✿ purple<span>basil</span></a>
+        <p>Good food. Great company. Always.</p>
+        <div class="footer-bottom">
+            <span>© <span class="year"></span> Purple Basil Restaurant</span>
+            <span>Made fresh, served with love.</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

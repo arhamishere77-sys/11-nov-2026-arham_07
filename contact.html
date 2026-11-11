@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Purple Basil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="logo" href="index.html">✿ purple<span>basil</span></a>
+        <button class="menu-toggle">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a class="nav-cta" href="#reservation">Book a Table</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-hero container">
+    <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+    <h1>Let's make it a <em>date.</em></h1>
+    <p>Questions, celebrations or just a table for two? Get in touch.</p>
+</section>
+
+<section class="section container contact-layout">
+
+    <div class="contact-info">
+        <p class="eyebrow">COME SAY HELLO</p>
+        <h2>Good food is<br><em>closer than you think.</em></h2>
+
+        <p>Reach out to our team for reservations, events or general questions.</p>
+
+        <div class="contact-detail">
+            <span>⌖</span>
+            <div>
+                <strong>Visit us</strong>
+                <p>123 Food Street, Karachi, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <span>☎</span>
+            <div>
+                <strong>Call us</strong>
+                <p>+92 300 1234567</p>
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <span>✉</span>
+            <div>
+                <strong>Email us</strong>
+                <p>hello@purplebasil.example</p>
+            </div>
+        </div>
+
+        <div class="hours-box">
+            <strong>Opening Hours</strong>
+            <p>Monday – Sunday</p>
+            <p>12:00 PM – 11:00 PM</p>
+        </div>
+    </div>
+
+    <form class="contact-form" id="reservation" novalidate>
+        <p class="eyebrow">BOOK OR SEND A MESSAGE</p>
+        <h2>Make a reservation</h2>
+
+        <div class="form-row">
+            <label>
+                Your Name
+                <input type="text" name="name" placeholder="Your name" required minlength="2">
+            </label>
+
+            <label>
+                Email Address
+                <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label>
+                Phone Number
+                <input type="tel" name="phone" placeholder="+92 300 1234567" required>
+            </label>
+
+            <label>
+                Guests
+                <select name="guests" required>
+                    <option value="">Select guests</option>
+                    <option>1 person</option>
+                    <option>2 people</option>
+                    <option>3 people</option>
+                    <option>4 people</option>
+                    <option>5 people</option>
+                    <option>6 people</option>
+                    <option>7+ people</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label>
+                Date
+                <input type="date" name="date" id="booking-date" required>
+            </label>
+
+            <label>
+                Time
+                <select name="time" required>
+                    <option value="">Choose a time</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>6:00 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:00 PM</option>
+                    <option>9:00 PM</option>
+                    <option>10:00 PM</option>
+                </select>
+            </label>
+        </div>
+
+        <label>
+            Message (Optional)
+            <textarea name="message" rows="4" placeholder="Any special requests?"></textarea>
+        </label>
+
+        <button class="button button-primary form-submit" type="submit">
+            Send Reservation Request →
+        </button>
+
+        <p class="form-message" id="form-message"></p>
+
+        <p class="small-note">
+            Demo form: details are checked in your browser only.
+        </p>
+    </form>
+
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="logo footer-logo" href="index.html">✿ purple<span>basil</span></a>
+        <p>Good food. Great company. Always.</p>
+        <div class="footer-bottom">
+            <span>© <span class="year"></span> Purple Basil Restaurant</span>
+            <span>Made fresh, served with love.</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
